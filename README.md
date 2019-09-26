@@ -1,2 +1,2 @@
-# inGeniusX
-inGenius X
+# inGeniusX Website
+https://ingeniusx.github.io/inGeniusX/
