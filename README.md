@@ -1,2 +1,2 @@
-# inGeniusX Website
-https://ingeniusx.github.io/inGeniusX/
+# inGenius X Official Open Source Website
+https://ingeniusx.org
