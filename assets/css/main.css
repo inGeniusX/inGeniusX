@@ -818,7 +818,7 @@ html {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 80% 20%;
 }
 .member-card {
   height: 100%;
