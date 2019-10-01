@@ -816,6 +816,16 @@ html {
   }
 }
 
+.grid-container-rayan {
+  display:grid;
+  grid-template-columns: 70% 30%;
+}
+
+.grid-container-andrew {
+  display:grid;
+  grid-template-columns: 30% 70%;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 80% 20%;
