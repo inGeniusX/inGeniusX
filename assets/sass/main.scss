@@ -3,20 +3,19 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
-@import 'libs/grid';
-@import 'libs/flexgrid';
-@import 'font-awesome.min.css';
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600');
+@import 'libs/html-grid';
+@import 'fontawesome-all.min.css';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic');
 
 /*
-	Industrious by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 // Breakpoints.
+
 	@include breakpoints((
-		default:   (1681px,   null     ),
 		xlarge:    (1281px,   1680px   ),
 		large:     (981px,    1280px   ),
 		medium:    (737px,    980px    ),
@@ -25,42 +24,52 @@
 		xxsmall:   (null,     360px    )
 	));
 
-// Color.
-	@mixin color($p) {
-		@include color-typography($p);
-		@include color-button($p);
-		@include color-form($p);
-		@include color-list($p);
-		@include color-table($p);
-		@include color-highlights($p);
-		@include color-testimonials($p);
+// Mixins.
+
+	@mixin inner {
+		> .inner {
+			@include padding(4em, 0);
+			margin: 0 auto;
+			max-width: _size(inner);
+			width: calc(100% - 6em);
+
+			@include breakpoint('<=small') {
+				@include padding(3em, 0);
+				width: calc(100% - 3em);
+			}
+		}
 	}
 
 // Base.
-	@import 'base/page';
+
 	@import 'base/reset';
+	@import 'base/page';
 	@import 'base/typography';
 
 // Component.
-	@import 'components/inner';
-	@import 'components/button';
+
+	@import 'components/row';
+	@import 'components/section';
 	@import 'components/form';
-	@import 'components/list';
-	@import 'components/table';
-	@import 'components/highlights';
-	@import 'components/testimonials';
-	@import 'components/actions';
-	@import 'components/grid';
+	@import 'components/box';
 	@import 'components/icon';
-	@import 'components/icons';
 	@import 'components/image';
-	@import 'components/wrapper';
+	@import 'components/list';
+	@import 'components/actions';
+	@import 'components/icons';
+	@import 'components/pagination';
+	@import 'components/table';
+	@import 'components/button';
+	@import 'components/tiles';
+	@import 'components/contact-method';
+	@import 'components/spotlights';
 
 // Layout.
-	@import 'layout/banner';
-	@import 'layout/cta';
-	@import 'layout/footer';
+
 	@import 'layout/header';
-	@import 'layout/heading';
+	@import 'layout/banner';
 	@import 'layout/main';
+	@import 'layout/contact';
+	@import 'layout/footer';
+	@import 'layout/wrapper';
 	@import 'layout/menu';
