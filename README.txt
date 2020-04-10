@@ -1,2 +1,2 @@
-# inGenius X Open Source Website
-##https://ingeniusx.org
+# inGenius X Official Website Repo
+## ingeniusx.org
