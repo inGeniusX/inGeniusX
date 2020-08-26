@@ -1,2 +1,2 @@
-# inGenius X Official Website Repo
-## ingeniusx.org
+inGenius X 2020
+ingeniusx.org
