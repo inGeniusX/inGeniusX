@@ -636,6 +636,22 @@ h6 {
   transform: scale(1.03);
 }
 
+.units-box {
+  text-align: center;
+  justify-content: center;
+  width: 25%;
+}
+
+.units-box .stats {
+  font-weight: 700;
+}
+
+.units-box .label {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 20%;
+}
+
 #about .about-img::before {
   position: absolute;
   left: -31px;
